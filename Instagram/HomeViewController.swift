@@ -220,7 +220,6 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         if segue.identifier == "comentSegue"{
             allComentViewController.postData = comentPostData
-            allComentViewController.keyboard = true
         }else if segue.identifier == "allComentSegue"{
             allComentViewController.postData = comentPostData
         }
@@ -286,8 +285,20 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
                 //上記によってイベントが登録されたのでobservingをtrueにする
                 comentobserving = true
             }
+        }else{
+            if comentobserving == true{
+                //ログアウトを検出したら、いったんテーブルを削除して、オブサーバーをクリアする
+                //テーブルをクリアする
+                comentsArray = []
+                tableView.reloadData()
+                
+                //オブサーバーを削除する
+                Database.database().reference().removeAllObservers()
+                
+                //上記によってオブサーバが解除されたので、observingをfalseにする
+                comentobserving = false
+            }
         }
-        
     }
     @IBAction func unwind(_ segue: UIStoryboardSegue){
         
