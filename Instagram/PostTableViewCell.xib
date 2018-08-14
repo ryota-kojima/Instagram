@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="939" id="KGk-i7-Jjw" customClass="PostTableViewCell" customModule="Instagram" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="464" height="939"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="464" height="938.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ISw-xw-GaC">
+                        <rect key="frame" x="0.0" y="41" width="464" height="464"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ISw-xw-GaC" secondAttribute="height" multiplier="1:1" id="7Fl-0S-rD7"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXg-lI-Pr5">
+                        <rect key="frame" x="30" y="515" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="5Pt-zz-mYv"/>
+                            <constraint firstAttribute="width" constant="40" id="RId-So-2iT"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="like_none"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cka-eQ-zSY">
+                        <rect key="frame" x="30" y="565" width="404" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dsw-a6-qgY">
+                        <rect key="frame" x="130" y="524.5" width="304" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6c-l0-gVs">
+                        <rect key="frame" x="30" y="596" width="404" height="252"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIw-QY-LIE">
+                        <rect key="frame" x="80" y="515" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="czj-HO-Zet"/>
+                            <constraint firstAttribute="width" constant="40" id="dFW-qB-26b"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="hukidashi"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cj6-eG-RI4">
+                        <rect key="frame" x="30" y="868" width="404" height="30"/>
+                        <state key="normal" title="全てのコメントを表示"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4f-EM-7lh">
+                        <rect key="frame" x="30" y="918" width="404" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ISw-xw-GaC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="8Gv-Yr-n12"/>
+                    <constraint firstItem="r4f-EM-7lh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="8tb-ye-8Nb"/>
+                    <constraint firstItem="ISw-xw-GaC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ChX-43-L4V"/>
+                    <constraint firstItem="gIw-QY-LIE" firstAttribute="leading" secondItem="VXg-lI-Pr5" secondAttribute="trailing" constant="10" id="DrE-0g-daf"/>
+                    <constraint firstItem="VXg-lI-Pr5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="FYv-f1-SwZ"/>
+                    <constraint firstItem="cka-eQ-zSY" firstAttribute="top" secondItem="VXg-lI-Pr5" secondAttribute="bottom" constant="10" id="Ffw-4z-c0Z"/>
+                    <constraint firstItem="r4f-EM-7lh" firstAttribute="top" secondItem="Cj6-eG-RI4" secondAttribute="bottom" constant="20" id="G7k-gx-zk0"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="i6c-l0-gVs" secondAttribute="bottom" constant="10" id="H1h-8q-Fjk"/>
+                    <constraint firstItem="i6c-l0-gVs" firstAttribute="top" secondItem="cka-eQ-zSY" secondAttribute="bottom" constant="10" id="HgX-zl-X8a"/>
+                    <constraint firstItem="Dsw-a6-qgY" firstAttribute="leading" secondItem="gIw-QY-LIE" secondAttribute="trailing" constant="10" id="Q2J-wP-SGv"/>
+                    <constraint firstItem="i6c-l0-gVs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="Qc6-MI-k60"/>
+                    <constraint firstAttribute="trailing" secondItem="ISw-xw-GaC" secondAttribute="trailing" id="VhF-P7-hCO"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Cj6-eG-RI4" secondAttribute="trailing" constant="10" id="WNk-1R-XWF"/>
+                    <constraint firstItem="VXg-lI-Pr5" firstAttribute="top" secondItem="ISw-xw-GaC" secondAttribute="bottom" constant="10" id="XsR-mB-nya"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="r4f-EM-7lh" secondAttribute="trailing" constant="10" id="Y29-TR-Bdm"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="i6c-l0-gVs" secondAttribute="trailing" constant="10" id="Zee-uY-Xlj"/>
+                    <constraint firstItem="gIw-QY-LIE" firstAttribute="centerY" secondItem="VXg-lI-Pr5" secondAttribute="centerY" id="egI-bR-pIF"/>
+                    <constraint firstItem="Dsw-a6-qgY" firstAttribute="centerY" secondItem="VXg-lI-Pr5" secondAttribute="centerY" id="gN6-4d-Uen"/>
+                    <constraint firstItem="Cj6-eG-RI4" firstAttribute="top" secondItem="i6c-l0-gVs" secondAttribute="bottom" constant="20" id="h7K-U2-1If"/>
+                    <constraint firstItem="cka-eQ-zSY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="n0U-Rr-rZt"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="cka-eQ-zSY" secondAttribute="trailing" constant="10" id="ntp-aK-Wn8"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="r4f-EM-7lh" secondAttribute="bottom" constant="10" id="rbL-Uo-Nll"/>
+                    <constraint firstItem="Cj6-eG-RI4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="sPb-uz-Ukf"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Dsw-a6-qgY" secondAttribute="trailing" constant="10" id="zuy-B4-Lq4"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="H1h-8q-Fjk"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="allComentButton" destination="Cj6-eG-RI4" id="FbY-xs-sP2"/>
+                <outlet property="allComentButtonTopcaption" destination="h7K-U2-1If" id="w2s-jr-k49"/>
+                <outlet property="captionBottomSafe" destination="H1h-8q-Fjk" id="tjb-GM-aMe"/>
+                <outlet property="captionLabel" destination="i6c-l0-gVs" id="dlQ-rL-7PI"/>
+                <outlet property="comentButton" destination="gIw-QY-LIE" id="ywm-lI-qXR"/>
+                <outlet property="comentLabel" destination="r4f-EM-7lh" id="n3t-ty-mZ8"/>
+                <outlet property="dateLabel" destination="Dsw-a6-qgY" id="nWw-Lz-C8X"/>
+                <outlet property="likeButton" destination="VXg-lI-Pr5" id="buN-5F-8AO"/>
+                <outlet property="likeLabel" destination="cka-eQ-zSY" id="ED9-L5-pbP"/>
+                <outlet property="postImageView" destination="ISw-xw-GaC" id="gst-H3-PtD"/>
+            </connections>
+            <point key="canvasLocation" x="106" y="242.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="hukidashi" width="606" height="577"/>
+        <image name="like_none" width="40" height="40"/>
+    </resources>
+</document>
